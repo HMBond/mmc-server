@@ -1,6 +1,6 @@
 import { Output } from 'midi';
 import { createRequire } from 'module';
-import { MidiMessage } from '../types';
+import { MidiMessage } from './types';
 const require = createRequire(import.meta.url);
 
 export function connectMidi() {

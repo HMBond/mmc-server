@@ -1,7 +1,7 @@
 import { randomUUID } from 'crypto';
 import * as dotenv from 'dotenv';
 import { WebSocket, WebSocketServer } from 'ws';
-import { connectMidi, note, pitchBend } from './lib/midi';
+import { connectMidi, note, pitchBend } from './midi';
 import { ErrorResponse, Message } from './types';
 
 dotenv.config();
