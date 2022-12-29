@@ -33,15 +33,15 @@ wss.on('connection', (ws) => {
         }
       }
     } catch (error) {
-      const message = 'could not parse midi message: ' + data.toString();
+      const message = '[MMC-server] could not parse midi message: ' + data.toString();
       console.log(message, error.stack);
       sendError(ws, message);
       return;
     }
-    console.log(`received from ${id.slice(0, 5)}...: %s`, data);
+    console.log(`[MMC-server] received from ${id.slice(0, 5)}...: %s`, data);
   });
 
-  console.log(`New Connection, total: ${room.size}, id: ${id.slice(0, 5)}...`);
+  console.log(`[MMC-server] New Connection, total: ${room.size}, id: ${id.slice(0, 5)}...`);
   ws.send('Connected');
 
   ws.on('close', () => {

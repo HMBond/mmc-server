@@ -7,7 +7,7 @@ export function connectMidi() {
   const midi = require('midi');
   const output: Output = new midi.Output();
   output.openPort(0);
-  console.log(`MIDI port out: ${output.getPortName(0)}`);
+  console.log(`[MMC-server] MIDI port out: ${output.getPortName(0)}`);
   return output;
 }
 
