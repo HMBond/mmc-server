@@ -8,6 +8,5 @@
     "types": ["node", "ws"],
     "esModuleInterop": false,
     "outDir": "build"
-    // "moduleDetection": "force"
   }
 }

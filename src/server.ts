@@ -33,7 +33,7 @@ wss.on('connection', (ws) => {
         }
       }
     } catch (error) {
-      const message = '[MMC-server] could not parse midi message: ' + data.toString();
+      const message = '[MMC-server] could not parse message: ' + data.toString();
       console.log(message, error.stack);
       sendError(ws, message);
       return;
